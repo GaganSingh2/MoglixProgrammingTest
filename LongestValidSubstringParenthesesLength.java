@@ -21,6 +21,7 @@ public class LongestValidSubstringParenthesesLength {
                 stk.push(i);
             }
             else{
+                //match the current character ')' with the last character '('
                 stk.pop();
 
                 //if the stack becomes empty means current character ')' is unmatched (pair not found). so insert this index as a new base index to prevent StackUnderflow error next time and also calculate to valid substring length for next valid Parenthesis.
